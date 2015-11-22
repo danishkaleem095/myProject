@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="danish"
+         default="compile"
+         basedir=""
+         >
+         
+         <target name="test">
+         <echo>Welcome</echo>
+         </target>
+         
+         <target name="create" depends="delete">
+         <mkdir dir="bin"></mkdir>
+         <mkdir dir="src"></mkdir>
+         <mkdir dir="lib"></mkdir>
+         </target>
+         
+         <target name="delete">
+         <delete dir="bin"></delete>
+           <delete dir="src"></delete>
+             <delete dir="lib"></delete>
+         </target>
+         <target name="compile">
+         <javac srcdir="C:\Users\DANISH\git\qwerty\myProject\ANT\Build\src"></javac>
+         </target>
+         </project>
